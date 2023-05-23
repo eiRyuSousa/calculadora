@@ -1,0 +1,44 @@
+#text h1 {
+    display: flex;
+    padding: 20px;
+    color: rgb(0, 72, 0);
+    font-family: Arial, sans-serif;
+}
+
+#form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+#js {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+#jc {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(1, 184, 1);
+    color: white;
+}

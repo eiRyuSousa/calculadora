@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+  <main id="corpo">
+
+  <h1 id="text">Calculadora</h1>
+
+  <form action=""> 
+    <label for="">insira o valor</label>
+    <input type="number" id="valor" value="" step=".01">
+
+    <label for="">quantidade de tempo</label>
+    <input type="number" id="tempo" value="" step=".01" >
+
+    <label for="">taxa</label>
+    <input type="number" id="taxa" step=".01">
+
+    <button id="js">juros simples</button>
+
+    <button id="jc">juros composto</button>
+
+  </form>
+</main>  
+
+<script>
+    var valor = document.getElementById("valor")
+
+    var tempo = document.getElementById("tempo")
+
+    var taxa = document.getElementById("taxa")
+
+    var js = document.getElementById("js")
+
+    var jc = document.getElementById("jc")
+
+    function calcS(){
+        var conta = parseFloat(valor.value) + parseFloat(valor.value * (taxa.value/100) * tempo.value)
+        alert(conta)
+    }
+
+    function calcC(){
+        var conta2 = parseFloat(valor.value) * (1 + taxa.value)^(tempo.value)
+        alert(conta2)
+    }
+
+    js.addEventListener("click" , calcS)
+
+
+    jc.addEventListener("click" , calcC)
+
+</script>
+</body>
+</html>
